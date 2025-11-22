@@ -25,6 +25,9 @@ let newUser = {
 //   email: "rushi@gmail.com",
 };
 
-createCourse(newUser);
+console.log(createCourse(newUser));
+
+
+
 
 export {};
