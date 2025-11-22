@@ -2,7 +2,7 @@ type User = {
     name: string;
     email: string;
     isActive : boolean
-} //this is type aliases d
+} //this is type aliases 
 
 function createUser(user : User) : User {
     return {
