@@ -13,24 +13,24 @@ type Admin = {
     id: number
 }
 
-let hitesh: User | Admin = {name: "hitesh", id: 334, username:""};
+let hitesh: Useee | Admin = { name: "hitesh", id: 334, username: "" };
 
 
-hitesh = {username: "hc", id: 334}
+hitesh = { username: "hc", id: 334 }
 
 // function getDbId(id: number | string){
 //     //making some API calls
 //     console.log(`DB id is: ${id}`);
-    
+
 // }
 getDbId(3)
 getDbId("3")
 
-function getDbId(id: number | string){
+function getDbId(id: number | string) {
     if (typeof id === "string") {
         id.toLowerCase()
     }
-  
+
 }
 
 //array 
@@ -43,3 +43,15 @@ let seatAllotment: "aisle" | "middle" | "window"
 
 seatAllotment = "aisle"
 // seatAllotment = "crew"
+
+
+function user(name: string | number) {
+    if (typeof name === "string") {
+        name.toLowerCase()
+    }
+    else {
+        name + 2
+    }
+}
+
+console.log(user("hitesh"));
